@@ -13,8 +13,8 @@
         
         //alert("requestMenuDraw start Working");
         
-        if (event.target.tagName.toLocaleLowerCase() === "nav") {
-            console.log("Do nothing, Nav container clicked.");
+        if (event.target.tagName.toLocaleLowerCase() === "nav" || event.target.id === "menu-burger" || event.target.classList.contains("menu-span")) {
+            console.log("Do nothing.");
         } else if (menuDraw.classList.contains("show-menu")){
             console.log("MenuDraw is open anything but the nav container was clicked.");
             toggleMenuDraw();
@@ -42,7 +42,7 @@
         //Prevent user seeing menu transition when changing 
         //the size of the window in real time
         
-        alert("toggleMenuDraw start Working");
+        //alert("toggleMenuDraw start Working");
         
         menuDraw.classList.add("transition-menu");
 
@@ -60,7 +60,7 @@
             menuDraw.addEventListener("transitionend", removeTransition);
         });
         
-        alert("toggleMenuDraw end Working");
+        //alert("toggleMenuDraw end Working");
     }
 
     function removeTransition() {
