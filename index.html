@@ -10,6 +10,11 @@
 </head>
 
 <body>
+    <header>
+        <div class="timg desktop-only"></div>
+        <h1>Taylor Hobson Rejection System</h1>
+        <div class="timg desktop-only"></div>
+    </header>
     <nav id="menu-draw">
         <a class="nav-item active-nav-item">Raise New Ticket</a>
         <a class="nav-item">View All Tickets</a>
@@ -19,36 +24,58 @@
         <span class="menu-span"></span>
         <span class="menu-span"></span>
     </div>
-    <header>
-        <div class="timg desktop-only"></div>
-        <h1>Taylor Hobson Rejection System</h1>
-        <div class="timg desktop-only"></div>
-    </header>
     <main>
         <section class="input-group">
             <h2>Vendor Information</h2>
             <div class="line">
-                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="First name">
             </div>
             <div class="line">
-                <input type="text" placeholder="Last Name">
-            </div>
-            <div class="line">
-                <input type="date" placeholder="date">
-            </div>
-            <div class="line">
-                <input type="datetime" placeholder="datetime">
-            </div>
-            <div class="line">
-                <input type="month" placeholder="month">
-            </div>
-            <div class="line">
-                <input type="number" placeholder="number">
+                <input type="text" placeholder="Last name">
             </div>
 
             <!--Date, Month, Number all produced mobile friendly keyboards -->
 
         </section>
+        <section class="input-group">
+            <h2>Part Information</h2>
+            <div class="line">
+                <input type="text" placeholder="First name">
+            </div>
+            <div class="line">
+                <input type="text" placeholder="Last name">
+            </div>
+        </section>
+        <section class="input-group">
+            <h2>Rejection Information</h2>
+            <div class="line">
+                <input type="text" placeholder="Rejection reason">
+            </div>
+            <div class="line">
+                <input type="text" placeholder="Rejection description">
+            </div>
+            <div class="line line--checkbox">
+                <input type="text">
+                <h3>Replacement Needed:</h3>
+                <div class="checkbox-container">
+                    <span>Yes</span>
+                    <span>No</span>
+                </div>
+            </div>
+        </section>
+        <section class="input-group">
+            <h2>Employee Information</h2>
+            <div class="line">
+                <input type="text" placeholder="First name">
+            </div>
+            <div class="line">
+                <input type="text" placeholder="Last name">
+            </div>
+            <div class="line">
+                <input type="date">
+            </div>
+        </section>
+        <div class="cta">Send Form</div>
     </main>
     <footer>
         <p>&copy; Chris Franks</p>
@@ -56,6 +83,7 @@
     </footer>
 
     <script src="js/menu-slider.js"></script>
+    <script src="js/input-form.js"></script>
 
 </body>
 </html>
