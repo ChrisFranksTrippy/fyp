@@ -9,7 +9,9 @@
     docBody.addEventListener("click", requestMenuDraw);
 
     function requestMenuDraw(event) {
-        console.log("requestMenuDraw start Working");
+        
+        alert("requestMenuDraw start Working");
+        
         if (event.target.id === "menu-burger" || event.target.classList.contains("menu-span")) {
             toggleMenuDraw();
         } else if (event.target.tagName.toLocaleLowerCase() === "nav") {
@@ -19,14 +21,14 @@
             toggleMenuDraw();
         }
         
-        console.log("requestMenuDraw end Working");
+        alert("requestMenuDraw end Working");
     }
 
     function toggleMenuDraw() {
         //Prevent user seeing menu transition when changing 
         //the size of the window in real time
         
-        console.log("toggleMenuDraw start Working");
+        alert("toggleMenuDraw start Working");
         
         menuDraw.classList.add("transition-menu");
 
@@ -44,7 +46,7 @@
             menuDraw.addEventListener("transitionend", removeTransition);
         });
         
-        console.log("toggleMenuDraw end Working");
+        alert("toggleMenuDraw end Working");
     }
 
     function removeTransition() {
