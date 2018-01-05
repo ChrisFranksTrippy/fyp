@@ -75,6 +75,7 @@ footer {
     background-color: rgb(240, 240, 240);
     box-sizing: border-box;
     border-top: 1px solid;
+    box-sizing: border-box;
 }
 
 .cta {
