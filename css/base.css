@@ -23,6 +23,7 @@ body {
 	background-color: rgb(240, 240, 240);
 	font-family: Ubuntu, sans-serif;
 	box-sizing: border-box;
+    cursor: pointer;
 }
 
 .desktop-only {
