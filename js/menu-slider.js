@@ -7,11 +7,20 @@
     let menuDraw = document.getElementById("menu-draw");
 
     docBody.addEventListener("click", requestMenuDraw);
+    mBurger.addEventListener("click", testRequest);
 
     function requestMenuDraw(event) {
         
-        alert("requestMenuDraw start Working");
+        //alert("requestMenuDraw start Working");
         
+        if (event.target.tagName.toLocaleLowerCase() === "nav") {
+            console.log("Do nothing, Nav container clicked.");
+        } else if (menuDraw.classList.contains("show-menu")){
+            console.log("MenuDraw is open anything but the nav container was clicked.");
+            toggleMenuDraw();
+        }
+        
+        /*
         if (event.target.id === "menu-burger" || event.target.classList.contains("menu-span")) {
             toggleMenuDraw();
         } else if (event.target.tagName.toLocaleLowerCase() === "nav") {
@@ -20,8 +29,13 @@
             console.log("MenuDraw is open anything but the nav container was clicked.");
             toggleMenuDraw();
         }
+        */
         
-        alert("requestMenuDraw end Working");
+        //alert("requestMenuDraw end Working");
+    }
+    
+    function testRequest() {
+        toggleMenuDraw();
     }
 
     function toggleMenuDraw() {
