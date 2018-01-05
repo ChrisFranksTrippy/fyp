@@ -29,8 +29,15 @@ body {
     display: none;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
 header h1 {
-    text-align: center;
+    padding-left: 10px;
+    font-size: 1.4em
 }
 
 footer {
