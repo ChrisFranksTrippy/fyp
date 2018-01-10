@@ -1,0 +1,8 @@
+main {
+	height: calc(100% - 120px);
+}
+
+.container-2 {
+	height: calc(100% - 10px);
+	box-sizing: border-box
+}
