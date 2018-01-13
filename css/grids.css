@@ -10,23 +10,40 @@ main {
 	box-sizing: border-box;
 }
 
-#t-header, #t-footer {
+#t-header,
+#t-footer {
 	display: none;
 }
 
 .div-row {
 	display: flex;
 	flex-wrap: wrap;
+	box-sizing: border-box;
+	border: 1px solid black;
+	margin: 5px 0;
+	color: white;
+	font-weight: bold;
+	background-color: #007bff;
 }
 
 .div-cell {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	box-sizing: border-box;
 	width: 50%;
+	padding: 10px;	
 }
 
 @media screen and (min-width: 1100px) {
+
+	main {
+		height: calc(100% - 170px);
+	}
+
+	.container-2 {
+		width: auto;
+	}
 
 	#t-header {
 		display: block;
@@ -52,7 +69,7 @@ main {
 		height: 50px;
 		background-color: #aaa;
 	}
-	
+
 	#example-record {
 		display: none;
 	}
