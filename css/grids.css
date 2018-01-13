@@ -17,6 +17,7 @@ main {
 }
 
 #example-record {
+	padding: 10px;
 	color: black;
 	background-color: lightgray;
 }
@@ -26,10 +27,10 @@ main {
 	flex-wrap: wrap;
 	box-sizing: border-box;
 	border: 1px solid black;
-	margin: 5px 0;
+	margin: 9px 0;
 	color: white;
 	font-weight: bold;
-	background-color: #007bff;
+	background-color: #17a2b8;
 }
 
 .div-cell {
@@ -38,7 +39,23 @@ main {
 	align-items: center;
 	box-sizing: border-box;
 	width: 50%;
-	padding: 10px;
+	padding: 10px 0px;
+	white-space: nowrap;
+}
+
+.div-cell:nth-child(odd) {
+	border-right: 1px solid black;
+}
+
+/*
+.div-cell:nth-child(even) {
+	border-left: 1px solid black;
+}
+*/
+
+.div-cell:nth-child(1),
+.div-cell:nth-child(2) {
+	border-bottom: 1px solid black;
 }
 
 @media screen and (min-width: 1100px) {
@@ -85,10 +102,11 @@ main {
 	}
 
 	.div-row {
-		flex-wrap: nowrap; //border: 1px solid black;
+		flex-wrap: nowrap; 
+		//border: 1px solid black;
 		//margin: 5px 0;
 		//color: white;
-		font-weight: bold; //background-color: #007bff;
+		//background-color: #007bff;
 	}
 
 	.div-cell {
