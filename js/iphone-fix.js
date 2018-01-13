@@ -1,29 +1,31 @@
 "use strict";
 
 (function () {
-	
+
 	let uagent = navigator.userAgent.toLowerCase();
 	let docBody = document.getElementsByTagName("body")[0];
-	
-	if (uagent.search("iphone") > -1 || uagent.search("ipad") > -1) {
-		docBody.style.cursor = "pointer";
-	} else {
-		console.log("Not an iPhone or iPad.");
-	}
 
 	let setWidth = document.getElementById("textbox-width");
 	let dateInputs = document.getElementsByClassName("date-width-fix");
 
-	resizeDateInputs();
+	if (uagent.search("iphone") > -1 || uagent.search("ipad") > -1) {
+		docBody.style.cursor = "pointer";
 
-	window.addEventListener('resize', resizeDateInputs);
+		resizeDateInputs();
+
+		window.addEventListener('resize', resizeDateInputs);
+
+	} else {
+		console.log("Not an iPhone or iPad.");
+	}
 
 	function resizeDateInputs() {
 		for (let i = 0; i < dateInputs.length; i++) {
 			dateInputs[i].style.width = setWidth.clientWidth + "px";
 		}
+
+		//alert(setWidth.clientWidth);
 	}
 
-	//alert(setWidth.clientWidth);
 
 })();
