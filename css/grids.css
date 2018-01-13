@@ -85,7 +85,10 @@ main {
 	}
 
 	.div-row {
-		flex-wrap: nowrap;
+		flex-wrap: nowrap; //border: 1px solid black;
+		//margin: 5px 0;
+		//color: white;
+		font-weight: bold; //background-color: #007bff;
 	}
 
 	.div-cell {
