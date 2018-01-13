@@ -18,6 +18,10 @@ html {
 
 	/* Allows you to scroll below the viewport; default value is visible */
 	overflow-y: scroll;
+	
+	/*Takes action on mobile */
+	-webkit-overflow-scrolling: touch;
+	
 }
 
 body {
@@ -32,6 +36,9 @@ body {
 	background-color: rgb(240, 240, 240);
 	font-family: Ubuntu, sans-serif;
 	box-sizing: border-box;
+	
+	/*Takes action on mobile */
+	-webkit-overflow-scrolling: touch;
 }
 
 .timg {

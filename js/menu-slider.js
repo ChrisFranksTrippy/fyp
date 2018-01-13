@@ -2,7 +2,6 @@
 
 (function () {
 
-	let uagent = navigator.userAgent.toLowerCase();
 	let docBody = document.getElementsByTagName("body")[0];
 	let mBurger = document.getElementById("menu-burger");
 	let menuDraw = document.getElementById("menu-draw");
@@ -47,11 +46,4 @@
 		menuDraw.removeEventListener("transitionend", removeTransition);
 	}
 	
-		
-	if (uagent.search("iphone") > -1 || uagent.search("ipad") > -1) {
-		docBody.style.cursor = "pointer";
-	} else {
-		console.log("Not an iPhone or iPad.");
-	}
-
 })();
