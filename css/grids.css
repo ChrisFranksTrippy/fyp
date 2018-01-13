@@ -1,8 +1,66 @@
 main {
-	height: calc(100% - 120px);
+	height: calc(100% - 130px);
+	margin-bottom: 5px;
 }
 
 .container-2 {
-	height: calc(100% - 10px);
-	box-sizing: border-box
+	position: relative;
+	height: 100%;
+	margin: 5px;
+	box-sizing: border-box;
 }
+
+#t-header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 40px;
+  background-color: #aaa;
+}
+
+#t-body {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  bottom: 50px;
+}
+
+#t-footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 50px;
+  background-color: #aaa;
+}
+
+.div-table {
+	width: 100%;
+}
+
+.div-row {
+	display: flex;
+}
+
+.div-cell {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.search-box-cell img {
+  width: 20px;
+  height: 20px;
+}
+
+.search-box-cell input {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
