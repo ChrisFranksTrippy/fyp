@@ -65,6 +65,7 @@ header h1 {
 
 main {
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 footer {
@@ -79,7 +80,7 @@ footer {
 	box-sizing: border-box;
 }
 
-.cover-layer {
+#cover-layer {
 	position: fixed;
 	display: flex;
 	display: none;
@@ -135,7 +136,7 @@ footer {
 	transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
-.cover-layer .cta {
+#cover-layer .cta {
 	width: 90%;
 }
 
@@ -159,6 +160,10 @@ footer {
 
 .ametek {
 	background-image: url(../img/AmetekLogo.jpg);
+}
+
+.flex {
+	display: flex !important;
 }
 
 @media screen and (min-width: 1100px) {
