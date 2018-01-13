@@ -17,7 +17,7 @@
 		<div class="ametek logo-img desktop-only"></div>
 	</header>
 	<nav id="menu-draw">
-		<a class="nav-item active-nav-item" href="index.html">Raise Ticket</a>
+		<a class="nav-item" href="index.html">Raise Ticket</a>
 		<a class="nav-item" href="tickets.html">All Tickets</a>
 	</nav>
 	<div id="menu-burger" class="burger">
@@ -27,85 +27,64 @@
 	</div>
 	<main>
 		<div class="container-1">
+			
 			<section class="container-2">
-				<h2>Vendor Information</h2>
+				<h2>Reject Information</h2>
 				<div class="line">
-					<h3>Vendor Name:</h3>
+					<h3>Reject Note</h3>
 					<input type="text">
 				</div>
 				<div class="line">
-					<h3>Buyer Name:</h3>
+					<h3>Date Raise:</h3>
 					<input type="text">
 				</div>
 				<div class="line">
-					<h3>Buyer Email:</h3>
+					<h3>PRO No:</h3>
 					<input type="text">
 				</div>
 				<div class="line">
-					<h3>Vendor Number:</h3>
-					<input type="text">
-				</div>
-
-				<div class="line line--sub-container">
-					<h3>Address:</h3>
-					<div class="line--sub">
-						<input type="text" placeholder="Line one">
-					</div>
-					<div class="line--sub">
-						<input type="text" placeholder="Line two">
-					</div>
-					<div class="line--sub">
-						<input type="text" placeholder="City">
-					</div>
-					<div class="line--sub">
-						<input type="text" placeholder="Post code">
-					</div>
-					<div class="line--sub">
-						<input type="text" placeholder="Country code">
-					</div>
-				</div>
-
-
-
-
-
-				<!--
-				<div class="line">
-					<input type="text" placeholder="">
-				</div>
--->
-
-				<!--Date, Month, Number all produced mobile friendly keyboards -->
-
-			</section>
-			<section class="container-2">
-				<h2>Part Information</h2>
-				<div class="line">
-					<h3>Part Number:</h3>
+					<h3>Replacement PO No:</h3>
 					<input type="text">
 				</div>
 				<div class="line">
-					<h3>Quanty Rejected:</h3>
-					<input type="text">
-				</div>
-				<div class="line">
-					<h3>Part Description:</h3>
-					<input type="text">
-				</div>
-				<div class="line">
-					<h3>Value (£):</h3>
+					<h3>Supplier RMA No:</h3>
 					<input type="text">
 				</div>
 				<div class="line line--checkbox">
 					<input type="text">
 					<h3>Replacement Needed:</h3>
-					<div class="checkbox-container">
-						<span>Yes</span>
-						<span>No</span>
+					<div class="checkbox-container checkbox-container--multi-option">
+						<span>DHL</span>
+						<span>Collect</span>
+						<span>Scrap</span>
 					</div>
 				</div>
 				<div class="line">
-					<h3>Manufacturing Order:</h3>
+					<h3>Tracking No:</h3>
+					<input type="text">
+				</div>
+				<div class="line">
+					<h3>Manufacturing No:</h3>
+					<input type="text">
+				</div>
+			</section>
+			
+			<section class="container-2">
+				<h2>Part Information</h2>
+				<div class="line">
+					<h3>Part No:</h3>
+					<input type="text">
+				</div>
+				<div class="line">
+					<h3>Description:</h3>
+					<input type="text">
+				</div>
+				<div class="line">
+					<h3>Rejectioned Quanty:</h3>
+					<input type="text">
+				</div>
+				<div class="line">
+					<h3>Total Value (£):</h3>
 					<input type="text">
 				</div>
 			</section>
@@ -113,7 +92,7 @@
 		
 		<div class="container-1">
 			<section class="container-2">
-				<h2>Rejection Information</h2>
+				<h2>Reason for Rejection</h2>
 				<div class="line">
 					<h3>Reason Code:</h3>
 					<select>
@@ -123,12 +102,17 @@
 						<option value="3">3</option>
 						<option value="4">4</option>
 					</select>
+				</div> 
+				<div class="line">
+					<h3>Description:</h3>
+					<input type="text">
 				</div>
 				<div class="line">
-					<h3>Description</h3>
+					<h3>Rejected PO No:</h3>
 					<input type="text">
 				</div>
 			</section>
+<!--
 			<section class="container-2">
 				<h2>Employee Information</h2>
 				<div class="line">
@@ -144,8 +128,10 @@
 					<input type="date">
 				</div>
 			</section>
+-->
 		</div>
-		<div id="submit-button" class="cta">Send Form</div>
+		<div id="save-button" class="cta">Save &amp; Close</div>
+		<div id="cancel-button" class="cta">Cancel</div>
 	</main>
 	<footer>
 		<p>&copy; Chris Franks</p>
@@ -153,5 +139,7 @@
 	</footer>
 
 	<script src="js/menu-slider.js"></script>
+	<script src="js/btns.js"></script>
+	<script src="js/edit-form.js"></script>
 </body>
 </html>

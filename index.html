@@ -11,13 +11,13 @@
 
 <body>
 	
-	<div id="cover-layer">
+	<div id="cover-layer" class="cover-layer">
 		<div class="cover-container">
 			<h3>Reject Number</h3>
 			<h3>20010</h3>
 			<div id="new-ticket" class="cta">Raise Ticket</div>
 			<div class="cta">Print</div>
-			<div class="cta">All Tickets</div>
+			<a href="tickets.html" class="cta">All Tickets</a>
 		</div>
 	</div>
 	
@@ -37,6 +37,37 @@
 	</div>
 	<main>
 		<div class="container-1">
+			<section class="container-2">
+				<h2>Part Information</h2>
+				<div class="line">
+					<h3>Part Number:</h3>
+					<input type="text">
+				</div>
+				<div class="line">
+					<h3>Quanty Rejected:</h3>
+					<input type="text">
+				</div>
+				<div class="line">
+					<h3>Part Description:</h3>
+					<input type="text">
+				</div>
+				<div class="line">
+					<h3>Value (£):</h3>
+					<input type="text">
+				</div>
+				<div class="line line--checkbox">
+					<input type="text">
+					<h3>Replacement Needed:</h3>
+					<div class="checkbox-container checkbox-container--yn">
+						<span>Yes</span>
+						<span>No</span>
+					</div>
+				</div>
+				<div class="line">
+					<h3>Manufacturing Order:</h3>
+					<input type="text">
+				</div>
+			</section>
 			<section class="container-2">
 				<h2>Vendor Information</h2>
 				<div class="line">
@@ -88,37 +119,7 @@
 				<!--Date, Month, Number all produced mobile friendly keyboards -->
 
 			</section>
-			<section class="container-2">
-				<h2>Part Information</h2>
-				<div class="line">
-					<h3>Part Number:</h3>
-					<input type="text">
-				</div>
-				<div class="line">
-					<h3>Quanty Rejected:</h3>
-					<input type="text">
-				</div>
-				<div class="line">
-					<h3>Part Description:</h3>
-					<input type="text">
-				</div>
-				<div class="line">
-					<h3>Value (£):</h3>
-					<input type="text">
-				</div>
-				<div class="line line--checkbox">
-					<input type="text">
-					<h3>Replacement Needed:</h3>
-					<div class="checkbox-container">
-						<span>Yes</span>
-						<span>No</span>
-					</div>
-				</div>
-				<div class="line">
-					<h3>Manufacturing Order:</h3>
-					<input type="text">
-				</div>
-			</section>
+			
 		</div>
 		
 		<div class="container-1">
@@ -163,6 +164,7 @@
 	</footer>
 
 	<script src="js/menu-slider.js"></script>
+	<script src="js/btns.js"></script>
 	<script src="js/input-form.js"></script>
 
 </body>

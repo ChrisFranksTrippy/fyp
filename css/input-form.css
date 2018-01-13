@@ -73,23 +73,45 @@
 	justify-content: center;
 	align-items: center;
 	height: 44px;
-	width: calc(50% - 5px);
+	width: 100%;
+	margin: 0px 2px;
 	border: 1px solid black;
 	border-radius: 4px;
+	font-weight: bold;
 	color: white;
-	background-color: #28a745;
 	filter: contrast(100%);
 	box-shadow: 0px 4px 4px black;
-	transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
-}
-
-.checkbox-container span:last-child {
-	background-color: #dc3545;
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease, background-color 0.5s ease; 
 }
 
 .checkbox-container span.toggle {
 	transform: translateY(4px);
 	box-shadow: 0px 0px 0px black;
+}
+
+/* Yes No Colours */
+
+.checkbox-container--yn span {
+	background-color: #28a745;
+}
+
+.checkbox-container--yn span:last-child {
+	background-color: #dc3545;
+}
+
+.checkbox-container--yn span.toggle {
+  filter: contrast(200%);
+}
+
+/* Muilti Option Colours */
+
+.checkbox-container--multi-option span {
+	background-color: #007bff;
+}
+
+.checkbox-container--multi-option span.toggle {
+	background-color: #28a745;
 	filter: contrast(200%);
 }
 

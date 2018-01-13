@@ -18,9 +18,6 @@ html {
 
 	/* Allows you to scroll below the viewport; default value is visible */
 	overflow-y: scroll;
-
-	/* To smooth any scrolling behavior */
-	-webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -29,9 +26,6 @@ body {
 
 	/* Allows you to scroll below the viewport; default value is visible */
 	overflow-y: scroll;
-
-	/* To smooth any scrolling behavior */
-	-webkit-overflow-scrolling: touch;
 
 	position: relative;
 	margin: 0;
@@ -80,16 +74,17 @@ footer {
 	box-sizing: border-box;
 }
 
-#cover-layer {
+.cover-layer {
 	position: fixed;
 	display: flex;
-	display: none;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: 100%;
-	z-index: 30;
 	background-color: rgba(0, 0, 0, 0.5);
+	/*Transition Styles*/
+	opacity: 0;	
+	z-index: -1;
 }
 
 .cover-container {
@@ -100,6 +95,13 @@ footer {
 	color: white;
 	background-color: rgba(0, 0, 0, 0.8);
 	border-radius: 5px;
+	/*Transition Styles*/
+	transform: scale(0.1);
+	transition: transform 0.3s ease-in-out;
+}
+
+.fade-in .cover-container {
+	transform: scale(1);
 }
 
 .cover-container h3 {
@@ -125,6 +127,7 @@ footer {
 	margin: 10px;
 	padding: 10px;
 	font-size: 1.25em;
+	text-decoration: none;
 	color: white;
 	background-color: #007bff;
 	filter: contrast(100%);
@@ -133,17 +136,17 @@ footer {
 	box-sizing: content-box;
 	box-sizing: border-box;
 	box-shadow: 0px 4px 4px black;
+	cursor: pointer;
 	transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
-#cover-layer .cta {
+.cover-layer .cta {
 	width: 90%;
 }
 
 .cta.toggle {
 	transform: translateY(4px);
 	box-shadow: 0px 0px 0px black;
-	filter: contrast(200%);
 }
 
 .logo-img {
@@ -162,8 +165,9 @@ footer {
 	background-image: url(../img/AmetekLogo.jpg);
 }
 
-.flex {
-	display: flex !important;
+.fade-in {
+	opacity: 1;
+	z-index: 30;
 }
 
 @media screen and (min-width: 1100px) {
