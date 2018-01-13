@@ -1,8 +1,6 @@
 "use strict";
 
 (function () {
-
-	alert("test 1");
 	
 	let uagent = navigator.userAgent.toLowerCase();
 	let docBody = document.getElementsByTagName("body")[0];
@@ -26,6 +24,6 @@
 		}
 	}
 
-	alert(setWidth.clientWidth);
+	//alert(setWidth.clientWidth);
 
 })();
