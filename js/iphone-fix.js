@@ -10,6 +10,7 @@
 
 	if (uagent.search("iphone") > -1 || uagent.search("ipad") > -1) {
 		docBody.style.cursor = "pointer";
+		docBody.style.overflowY = "scroll";
 
 		resizeDateInputs();
 

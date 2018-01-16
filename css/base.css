@@ -29,7 +29,7 @@ body {
 	height: 100%;
 
 	/* Allows you to scroll below the viewport; default value is visible */
-	overflow-y: scroll;
+	//overflow-y: scroll;
 
 	position: relative;
 	margin: 0;
