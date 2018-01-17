@@ -81,6 +81,14 @@ footer {
 	box-sizing: border-box;
 }
 
+footer p {
+	width: 100%;
+}
+
+footer p:last-child {
+	text-align: right;
+}
+
 .cover-layer {
 	position: fixed;
 	display: flex;
