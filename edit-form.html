@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Reject System</title>
@@ -140,13 +141,37 @@
 				</div>
 				<div class="line">
 					<h3>Rejected PO No:</h3>
-					<input type="text">
+					<input id="textbox-width" type="text">
 				</div>
 			</section>
 
 		</div>
+
+		<div class="container-2 notice">
+			<h2>Important Notice</h2>
+			<p>Please issue a credit for these rejected goods with the reference <span>PRO No</span></p>
+			<p>Replacements are <span>Not Required</span></p>
+		</div>
+
+		<div class="container-2 container-2--full-width">
+			<div class="line">
+				<h3>Date Goods Shipped</h3>
+				<input class="date-width-fix" type="date">
+			</div>
+			<div class="line line--checkbox line--checkbox-slider">
+				<h3>Credit Note Recieved</h3>
+				<input type="checkbox">
+				<div id="credit-recieved-slider" class="checkbox-container--slider">
+					<div class="green-slider"></div>
+					<div class="ball-slider"></div>
+				</div>
+			</div>
+		</div>
+		
 		<div id="save-button" class="cta">Save &amp; Close</div>
 		<div id="cancel-button" class="cta">Cancel</div>
+		<div class="cta" onclick="window.location.reload(true);">Force Reload</div>
+
 	</main>
 	<footer>
 		<p>&copy; Chris Franks</p>
@@ -158,4 +183,5 @@
 	<script src="js/btns.js"></script>
 	<script src="js/edit-form.js"></script>
 </body>
+
 </html>

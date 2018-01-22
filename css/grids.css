@@ -54,7 +54,7 @@ main {
 	border-bottom: 1px solid black;
 }
 
-#example-record {
+#t-body #example-record {
 	padding: 10px;
 	color: black;
 	background-color: lightgray;

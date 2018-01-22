@@ -18,10 +18,10 @@ html {
 
 	/* Allows you to scroll below the viewport; default value is visible */
 	overflow-y: scroll;
-	
+
 	/*Takes action on mobile */
 	-webkit-overflow-scrolling: touch;
-	
+
 }
 
 body {
@@ -30,22 +30,14 @@ body {
 
 	/* Allows you to scroll below the viewport; default value is visible */
 	//overflow-y: scroll;
-
 	position: relative;
 	margin: 0;
 	background-color: rgb(240, 240, 240);
 	font-family: Ubuntu, sans-serif;
 	box-sizing: border-box;
-	
+
 	/*Takes action on mobile */
 	-webkit-overflow-scrolling: touch;
-}
-
-.timg {
-	width: 50px;
-	height: 50px;
-	background-color: #dc3545;
-	border: 1px solid;
 }
 
 .desktop-only {
@@ -98,7 +90,7 @@ footer p:last-child {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	/*Transition Styles*/
-	opacity: 0;	
+	opacity: 0;
 	z-index: -1;
 }
 
