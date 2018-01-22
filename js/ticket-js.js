@@ -6,15 +6,13 @@
 	let ticketCards = document.getElementById("t-body").getElementsByClassName("cta");
 	
 	let mobileSearchBtn = document.getElementById("mobile-search-button");
-	let mobileSearchContainer = document.getElementById("t-footer");
+	let mobileSearchContainer = document.getElementById("mobile-search");
 	
 	for (let i = 0; i < ticketCards.length; i++) {		
 		ticketCards[i].addEventListener("click", doubleTabRequest);		
 	}
 	
 	mobileSearchBtn.addEventListener("click", toggleMobileSearch);
-	
-	
 	
 	function doubleTabRequest(event) {
 		console.log("double tab requested!");
